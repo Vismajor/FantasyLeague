@@ -11,7 +11,7 @@
   <br>
   <% @teams = Team.all %>
   <%= f.label :team_id %>
-  <%= select_tag :team_id, options_from_collection_for_select(@teams, 'id', 'name') %>
+  <%= f.select :team_id, options_from_collection_for_select(@teams, 'id', 'name') %>
   <br>
   <%= f.submit 'Player!' %>
 
